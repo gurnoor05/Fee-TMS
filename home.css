@@ -1,0 +1,201 @@
+/* Reset some default styles */
+•⁠  ⁠{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e5e5e5;
+    /* color: #333; */
+    line-height: 1.6;
+}
+header {
+    /* background-color: #231f20; */
+    background-color: #14213d;
+    color: #fff;
+    padding: px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 1);
+
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px; /* Padding for box size */
+    border: 2px solid #ffa500; /* Border around each link */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #333; /* Background color */
+    transition: all 0.3s;
+}
+
+.nav-links a:hover {
+    color: #333; /* Text color on hover */
+    background-color: #ffa500; /* Change background on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 6px 12px 16px;
+    border-radius:10px
+}
+
+.logo h1 {
+    font-size: 1.8em;
+}
+
+/* Welcome section styling */
+.welcome-text {
+    text-align: center;
+    /* margin-top: 60px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* height: 30vw; */
+    background-image: url(abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner.jpg);
+    width: 100vw;
+    
+    background-color: rgba(0, 0, 0, 1);
+    margin-top: 10px;
+    
+}
+
+.welcome-text h2 {
+    font-size: 3em;
+    color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.welcome-text p {
+    font-size: 1.2em;
+    color: #ffffff;
+    width: 50vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 20px 30px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin: 30px;
+}
+
+.cta-button:hover {
+    background-color: #ffa500;
+}
+
+/* Features section styling */
+#features {
+    /* background-color: #fff; */
+    background-color: #ffecd1;
+    padding: 60px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    text-align: center;
+}
+
+.feature-box {
+    padding: 20px;
+    height: 20vh;
+    
+    box-shadow: 7px 7px 10px #14213d;
+    /* background-color: #abd1df; */
+    background-color: #fab07dfc;
+    border: 3px solid black;
+    border-radius: 8px;
+    transition: transform 0.1s, box-shadow 0.8s;
+    border-radius:25px
+
+}
+
+.feature-box:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 10px 20px rgba(17, 15, 15, 0.1);
+}
+
+.feature-box h3 {
+    font-size: 1.6em;
+    color: #030303;
+    font-style:normal;
+}
+
+.feature-box p {
+    font-size: 1em;
+    color: #4f4e4e;
+}
+
+/* Footer */
+footer {
+    
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.contact
+{ background-color: #333;;
+
+}
+.copyright
+{
+     background-color:#003049 ;
+     
+     
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+.logo{
+    width: 300px;
+}
+img{
+    width: 100%;
+}
