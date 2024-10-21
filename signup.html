@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login3.css">
+    <link rel="stylesheet" href="signup.css">
     <title>Sign up Page</title>
     <style>
        
@@ -22,7 +22,7 @@
     </style>
 </head>
 <body>
-    <img src="test-hub-high-resolution-logo-transparent.png"  class="logo" alt="Logo" width="100">
+    
     <div class="login-container">
         <button class="close-button" onclick="closeWindow()">✖</button>
         <button class="back-button" onclick="goBack()">← Back</button>
@@ -51,18 +51,6 @@
         
         function goBack() {
             window.history.back(); 
-        }
-
-        function validateForm() {
-            const password = document.getElementById("create-password").value;
-            const confirmPassword = document.getElementById("confirm-password").value;
-
-            if (password !== confirmPassword) {
-                alert("Passwords do not match. Please try again.");
-                return false; 
-            }
-
-            return true; 
         }
     </script>
 </body>

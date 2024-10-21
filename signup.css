@@ -1,26 +1,44 @@
 body {
-            
-    background-color:#14213d ;
-    background-size: cover;
-    background-position: center;
+    background-color: #14213d;
+    background-image: linear-gradient(135deg, #14213d 25%, #fca311 25%, #fca311 50%, #14213d 50%, #14213d 75%, #fca311 75%, #fca311 100%);
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s ease infinite;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    font-family: 'Roboto', sans-serif; /* Added font family */
 }
 
-.login-container {
-    background-color:#e5e5e5;
 
-    width: 100vw;;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.1);
-    width: 500px; 
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.login-container {
+    background-color: rgba(229, 229, 229, 0.95); /* Lighter and more transparent */
+    padding: 40px; /* Increased padding */
+    border-radius: 20px; /* Slightly more rounded corners */
+    box-shadow: 0 15px 60px rgba(0, 0, 0, 0.4); /* Deeper shadow for a lifted effect */
+    width: 400px; /* Adjusted width */
     text-align: center;
-    border: solid #fca311 5px;
-    position: relative; 
+   
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation on hover */
+}
+
+.login-container:hover {
+    transform: scale(1.03); /* Slightly scale up on hover */
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5); /* Change shadow on hover */
+}
+
+h2 {
+    color: #14213d; /* Header color */
+    font-weight: bold;
+    margin-bottom: 20px; /* Space below header */
+    letter-spacing: 1px; /* Slight letter spacing */
 }
 
 .login-form {
@@ -29,44 +47,55 @@ body {
 }
 
 .login-form label {
-    margin: 10px 0 5px;
+    margin: 15px 0 5px; /* Adjusted margin */
     font-weight: bold;
+    color: #14213d; /* Changed label color */
 }
 
 .login-form input {
-    padding: 10px;
+    padding: 12px; /* Increased padding */
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for focus */
+}
+
+.login-form input:focus {
+    border-color: #fca311; /* Change border color on focus */
+    outline: none; /* Remove outline */
+    box-shadow: 0 0 5px rgba(252, 163, 17, 0.5); /* Add a subtle glow */
 }
 
 .login-form button {
-    padding: 10px;
+    padding: 12px; /* Increased padding */
     background-color: #fca311;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s, transform 0.3s; /* Animation for button */
+    margin-bottom: 20px; /* Increased margin for spacing */
 }
 
 .login-form button:hover {
-    background-color: #00aab3;
+    background-color: #e59400; /* Slightly darker on hover */
+    transform: translateY(-3px); /* Button lift effect */
 }
 
 .register-button {
     padding: 10px;
-    background-color: #28a745; 
+    background-color: #28a1a7; 
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s; /* Added transform */
     margin-top: 10px; 
 }
 
 .register-button:hover {
     background-color: #218838; 
+    transform: translateY(-3px); /* Button lift effect */
 }
 
 .close-button {
@@ -76,15 +105,15 @@ body {
     background: none;
     border: none;
     font-size: 18px;
-    color: rgb(218, 44, 44);
+    color: rgb(218, 44, 44); /* Close button color */
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s; /* Added transform */
 }
 
 .close-button:hover {
-    background-color: rgba(218, 44, 44, 0.3); 
-    color: #fff; 
+    background-color: rgba(218, 44, 44, 0.5); 
     border-radius: 5px; 
+    transform: scale(1.1); /* Slightly scale up */
 }
 
 .back-button {
@@ -94,6 +123,25 @@ body {
     background: none;
     border: none;
     font-size: 18px;
-    color: #007bff;
+    color: #007bff; /* Back button color */
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s; /* Added transform */
+}
+
+.back-button:hover {
+    background-color: rgba(0, 123, 255, 0.5); 
+    border-radius: 5px; 
+    transform: scale(1.1); /* Slightly scale up */
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .login-container {
+        width: 90%; /* Adjust width for smaller screens */
+        padding: 20px; /* Reduced padding */
+    }
+    
+    .login-form button, .register-button {
+        padding: 10px; /* Adjust button padding */
+    }
 }

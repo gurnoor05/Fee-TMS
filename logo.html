@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="loi.css">
     <title>Login Page</title>
-    
-        
-
-   
+</head>
+<body>
     <div class="login-container">
         <button class="close-button" onclick="closeWindow()">✖</button>
         <button class="back-button" onclick="goBack()">← Back</button>
         <h2>Login Portal</h2>
-        <form class="login-form" action="your-server-endpoint" method="POST">
+        <form class="login-form" action="login.php" method="POST">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" placeholder="Enter your username" required aria-label="Username">
             
@@ -23,8 +21,7 @@
             <label for="group-number">Group No.:</label>
             <input type="text" id="group-number" name="group-number" placeholder="Enter your group number" required aria-label="Group Number" pattern="\d*">
             
-           <button type="submit"><a href="dash.html">Login</button></a>
-            
+            <button type="submit">Login</button>
         </form>
         <p><a href="forgot-password.html">Forgot Password?</a></p>
         <p style="font-weight: bold;">First time on Test Hub?  <a href="signup.html">Register</a></p>
@@ -37,10 +34,6 @@
         
         function goBack() {
             window.history.back(); // Go back to the previous page
-        }
-
-        function redirectToRegister() {
-            window.location.href = 'register.html'; // Redirects to the registration page
         }
     </script>
 </body>
