@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        body {
+            background-color: #14213d;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: #e5e5e5;
+            width: 500px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 50px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border: solid #fca311 5px;
+            position: relative;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login-form label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        .login-form input,
+        .login-form textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .login-form button {
+            padding: 10px;
+            background-color: #fca311;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-form button:hover {
+            background-color: #0056b3;
+        }
+
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            font-size: 18px;
+            color: rgb(218, 44, 44);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .close-button:hover {
+            background-color: rgba(218, 44, 44, 0.3);
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: none;
+            border: none;
+            font-size: 18px;
+            color: #007bff;
+            cursor: pointer;
+        }
+
+        .back-button:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+
+        function showThankYouMessage(event) {
+            event.preventDefault(); // Prevent the default form submission
+            alert("Thanks for your response");
+        }
+    </script>
+</head>
+<body>
+
+    <div class="login-container">
+        <button class="close-button" onclick="window.close()">×</button>
+        <button class="back-button" onclick="goBack()">← Back</button>
+        <h2>Feedback Form</h2>
+        <form class="login-form" action="#" method="POST" onsubmit="showThankYouMessage(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="profession">Profession:</label>
+            <input type="text" id="profession" name="profession" required>
+
+            <label for="help">How Test Hub helped you:</label>
+            <textarea id="help" name="help" rows="4" required></textarea>
+
+            <label for="suggestions">Suggestions:</label>
+            <textarea id="suggestions" name="suggestions" rows="4"></textarea>
+            <label for="questions">Any Questions regarding Test Hub</label>
+            <textarea id="help" name="help" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+/* Reset some default styles */
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e5e5e5;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    height: 30px;
+
+    background-color: black;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5)
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px; 
+    border: 2px solid #ffa500; 
+    border-radius: 5px; 
+    background-color: #333; 
+    transition: all 0.3s;
+}
+
+.nav-links a:hover {
+    color: #333; 
+    background-color: #ffa500; 
+    transform: scale(1.05);
+    border-radius: 10px;
+}
+
+/* Welcome text styling */
+.welcome-text {
+    text-align: center;
+    background-image: url('blue-background-gradient.jpeg');
+    padding: 60px 20px;
+}
+
+/* Feature section */
+#features {
+    background-color: #ffecd1;
+    padding: 40px 0;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+/* Testimonials section */
+#testimonials {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Partners section */
+#partners {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+/* FAQ section */
+#faq {
+    background-color: #ffecd1;
+    padding: 40px;
+}
+
+/* Footer */
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact {
+    background-color: #333;
+    padding: 20px; 
+}
+
+.copyright {
+    background-color: #003049;
+    padding: 10px;
+}

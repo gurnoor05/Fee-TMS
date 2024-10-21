@@ -4,26 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exam Interface</title>
-    <link rel="stylesheet" href="guide.css">
+    <link rel="stylesheet" href="guide2.css">
 </head>
 <body>
     <div class="container">
-        
         <h1>Exam Guidelines</h1>
         <ol class="guidelines">
             <li>Read each question carefully.</li>
             <li>Choose the best answer from the options provided.</li>
             <li>You can skip questions and come back to them later.</li>
             <li>You cannot select more than one option.</li>
-            <li>Once you submit the test, you are not allowed to make any changes in the test.</li>
+            <li>Once you submit the test, you are not allowed to make any changes.</li>
             <li>You will not get a second chance.</li>
             <li>Do not refresh the page while taking the exam.</li>
             <li>Good luck!</li>
         </ol>
-        <label class="checkbox-label">
-            <input type="checkbox" name="checkbox" required> I agree to all these guidelines
-        </label>
-        <br><br>
+        
+        <div class="checkbox-label">
+            <input type="checkbox" name="agreement" id="agreement" required>
+            <label for="agreement">I agree to all these guidelines</label>
+        </div>
+        
         <button id="nextButton"><a href="feeques.html">Next</a></button>
     </div>
 </body>

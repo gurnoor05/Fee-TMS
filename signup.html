@@ -22,7 +22,7 @@
     </style>
 </head>
 <body>
-    <img src="test-hub-high-resolution-logo-transparent.png"  class="logo" alt="Logo">
+    <img src="test-hub-high-resolution-logo-transparent.png"  class="logo" alt="Logo" width="100">
     <div class="login-container">
         <button class="close-button" onclick="closeWindow()">✖</button>
         <button class="back-button" onclick="goBack()">← Back</button>
@@ -46,11 +46,11 @@
 
     <script>
         function closeWindow() {close.window()
-             // Closes the current window (may not work in all browsers due to security settings)
+             
         }
         
         function goBack() {
-            window.history.back(); // Go back to the previous page
+            window.history.back(); 
         }
 
         function validateForm() {
@@ -59,10 +59,10 @@
 
             if (password !== confirmPassword) {
                 alert("Passwords do not match. Please try again.");
-                return false; // Prevent form submission
+                return false; 
             }
 
-            return true; // Allow form submission
+            return true; 
         }
     </script>
 </body>

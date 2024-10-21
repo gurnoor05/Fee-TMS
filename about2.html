@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Test Management System</title>
+    <link rel="stylesheet" href="dash.css">
+    <style>
+      
+        header {
+            background: linear-gradient(45deg, #333, #555);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+            border-bottom: 2px solid #ffd700;
+            transition: all 0.3s ease;
+        }
+
+        
+        .welcome-text {
+            background: url('background.jpg') center/cover no-repeat;
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 30px;
+        }
+
+        .welcome-text h2 {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #ffd700;
+        }
+
+        .welcome-text p {
+            font-size: 1.2em;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 50px auto;
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+            animation-delay: 0.2s;
+        }
+
+        section h2 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        section p {
+            color: #555;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        
+        footer {
+            background: linear-gradient(45deg, #444, #222);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 30px;
+        }
+
+        footer .contact, .copyright {
+            margin: 10px 0;
+            font-size: 0.9em;
+            color: #fff;
+        }
+
+       
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+ 
+    <header>
+        <nav>
+            <h1>Test Hub</h1>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="dash.html">Dashboard</a></li>
+                <li><a href="features.html">Features</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  
+    <div class="welcome-text">
+        <h2>About Us</h2>
+        <p>Welcome to Test Hub, a platform for streamlining and managing online exams effortlessly. Our goal is to provide an efficient solution for educators and students alike.</p>
+    </div>
+
+    
+    <div class="container">
+        <section>
+            <h2>Our Mission</h2>
+            <p>Our mission is to empower educational institutions with a test management platform that simplifies exams. We provide robust tools for creating, managing, and grading tests.</p>
+            <p>We support various formats, including multiple-choice, essay, and coding exams, adapting to diverse disciplines and certification requirements.</p>
+        </section>
+
+        <section class="team">
+            <h2>Meet the Team</h2>
+            <p>We are a group of passionate first-year computer science students dedicated to improving online exams. With our expertise, we bridge the gap between technology and education.</p>
+        </section>
+
+        <section>
+            <h2>Why Choose Us?</h2>
+            <p>Our platform stands out with reliability, security, and ease of use. Features like real-time monitoring, automated grading, and anti-cheating tools ensure a smooth experience.</p>
+        </section>
+
+        <section>
+            <h2>Future Plans</h2>
+            <p>We are committed to evolving with the changing landscape of online education. Our roadmap includes incorporating AI-based analytics for performance insights, expanding support for more question types, and enhancing mobile accessibility. We aim to make our platform a comprehensive solution for all your test management needs.</p>
+            <p>Stay tuned for upcoming updates and new features that will make managing tests even easier.</p>
+        </section>
+    </div>
+
+  
+    <footer>
+        <div class="contact">
+            <p>Contact us: support@testmanagementsystem.com</p>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Test Management System. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

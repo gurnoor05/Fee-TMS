@@ -20,7 +20,7 @@ body {
     width: 500px; 
     text-align: center;
     border: solid #fca311 5px;
-    position: relative; /* Position relative to place absolute buttons */
+    position: relative; 
 }
 
 .login-form {
@@ -51,22 +51,22 @@ body {
 }
 
 .login-form button:hover {
-    background-color: #0056b3;
+    background-color: #00aab3;
 }
 
 .register-button {
     padding: 10px;
-    background-color: #28a745; /* A green color for differentiation */
+    background-color: #28a745; 
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 10px; /* Adds some space above the button */
+    margin-top: 10px; 
 }
 
 .register-button:hover {
-    background-color: #218838; /* Darker shade on hover */
+    background-color: #218838; 
 }
 
 .close-button {
@@ -82,9 +82,9 @@ body {
 }
 
 .close-button:hover {
-    background-color: rgba(218, 44, 44, 0.3); /* Change background color on hover */
-    color: #fff; /* Change text color on hover */
-    border-radius: 5px; /* Add rounded corners on hover */
+    background-color: rgba(218, 44, 44, 0.3); 
+    color: #fff; 
+    border-radius: 5px; 
 }
 
 .back-button {

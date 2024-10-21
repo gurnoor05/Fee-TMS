@@ -16,19 +16,13 @@
     <header>
         <nav>
             <div class="logo">
-              <a href="home.html"><img src="test-hub-high-resolution-logo-transparent.png" alt="Test Hub Logo" ></a>  
+                <img src="test-hub-high-resolution-logo-transparent.png" alt="Test Hub Logo" >
             </div>
             <ul class="nav-links">
-               
+                <li><a href="#Homee">Home</a></li>
                 <li><a href="dash.html">Dashboard</a></li>
-                
-                <li><a href="#contacts">Contact</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#faq">Faq</a></li>
                 <li><a href="about.html">About</a></li>
-            </li>
-           
+                <li><a href="#contacts">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -46,76 +40,70 @@
             <h2>Features</h2>
             <div class="feature-grid">
                 <div class="feature-box">
-                    <h3>Test Case Management</h3><br>
+                    <h3>Test Case Management</h3>
                     <p>Easily manage and organize your test cases in one place.</p>
                 </div>
                 <div class="feature-box">
-                    <h3>Automated Reports</h3><br>
+                    <h3>Automated Reports</h3>
                     <p>Generate reports with detailed analysis on your test results.</p>
                 </div>
                 <div class="feature-box">
-                    <h3>Upcoming Tests</h3><br>
+                    <h3>Upcoming Tests</h3>
                     <p>Check out the upcoming tests, so you don't miss any.</p>
                 </div>
                 <div class="feature-box">
-                    <h3>Different Subjects</h3><br>
+                    <h3>Different Subjects</h3>
                     <p>A wide range of different subjects and topics available for testing knowledge.</p>
                 </div>
             </div>
         </div>
     </section>
-    <section id="testimonials">
-        <div class="container">
-            <h2>What Our Users Say</h2>
-            <div class="testimonial-grid">
-                <div class="testimonial">
-                    <p>"Test Hub has made managing tests so much easier for our organization."</p>
-                    <h4>- Dr. Satnam Singh,<br> Professor</h4>
-                </div>
-                <div class="testimonial">
-                    <p>"The automated reports feature is a game-changer. Highly recommended!"</p>
-                    <h4>- Mulla,<br> Student</h4>
-                </div>
-                <div class="testimonial">
-                    <p>"An intuitive platform with fantastic support. Great experience overall."</p>
-                    <h4>- Manpreet Singh,<br> Student</h4>
-                </div>
-                <div class="testimonial">
-                    <p>"Very easy to use and upcoming tests features enables me to keep a check of upcoming tests."</p>
-                    <h4>- Manan Goyal,<br> Student</h4><br>
-                </p>
-                
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-    <br>
-    <center>
-</p>
-<a href="review.html" class="cta-button">Share Your Experiance</a>
-   </center> 
-</div>
-    </section>
-    
     <section id="faq">
         <div class="container">
             <h2>Frequently Asked Questions</h2>
             <div class="faq-item">
-                <h3>How do I create an account?</h3>
-                <p>To create an account, click on the "Get Started" button and follow the registration process.</p>
+                <button class="faq-question">
+                    How do I create an account? <span class="arrow">&#9660;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>To create an account, click on the "Get Started" button and follow the registration process.</p>
+                </div>
             </div>
             <div class="faq-item">
-                <h3>Can I customize my tests?</h3>
-                <p>Yes, Test Hub allows you to customize the questions, time limits, and scoring methods for your tests.</p>
+                <button class="faq-question">
+                    Can I customize my tests? <span class="arrow">&#9660;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, Test Hub allows you to customize the questions, time limits, and scoring methods for your tests.</p>
+                </div>
             </div>
             <div class="faq-item">
-                <h3>Can I reattempt my test?</h3>
-                <p>Yes, Test Hub allows you to reattempt your test; there is no limit on attempts of a particular test.</p>
+                <button class="faq-question">
+                    Can I reattempt my test? <span class="arrow">&#9660;</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, Test Hub allows you to reattempt your test, with no limit on attempts for a particular test.</p>
+                </div>
             </div>
         </div>
     </section>
+    <script>
+        // Select all FAQ questions
+        const faqQuestions = document.querySelectorAll('.faq-question');
+    
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                // Toggle the answer visibility
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+    
+                // Rotate the arrow
+                const arrow = question.querySelector('.arrow');
+                arrow.textContent = arrow.textContent === '\u25BC' ? '\u25B2' : '\u25BC';
+            });
+        });
+    </script>
+    
     
     <footer>
         <div class="contact">
